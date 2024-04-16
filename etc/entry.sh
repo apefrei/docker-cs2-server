@@ -59,7 +59,6 @@ sed -i -e "s/{{SERVER_HOSTNAME}}/${CS2_SERVERNAME}/g" \
        -e "s/{{SERVER_LOG_MONEY}}/${CS2_LOG_MONEY}/g" \
        -e "s/{{SERVER_LOG_DETAIL}}/${CS2_LOG_DETAIL}/g" \
        -e "s/{{SERVER_LOG_ITEMS}}/${CS2_LOG_ITEMS}/g" \
-       -e "s/{{STEAMAPPDIR}}/${STEAMAPPDIR}/g" \
        "${STEAMAPPDIR}"/game/csgo/cfg/server.cfg
 
 if [[ ! -z $CS2_BOT_DIFFICULTY ]] ; then
