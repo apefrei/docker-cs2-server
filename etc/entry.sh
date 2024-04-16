@@ -24,12 +24,12 @@ ln -sfT ${STEAMCMDDIR}/linux64/steamclient.so ~/.steam/sdk64/steamclient.so
 cp /etc/server.cfg "${STEAMAPPDIR}"/game/csgo/cfg/server.cfg
 
 # Install hooks if they don't already exist
-if [[ ! -f "${STEAMAPPDIR}/pre.sh" ]] ; then
-    cp /etc/pre.sh "${STEAMAPPDIR}/pre.sh"
-fi
-if [[ ! -f "${STEAMAPPDIR}/post.sh" ]] ; then
-    cp /etc/post.sh "${STEAMAPPDIR}/post.sh"
-fi
+# if [[ ! -f "${STEAMAPPDIR}/pre.sh" ]] ; then
+#     cp /etc/pre.sh "${STEAMAPPDIR}/pre.sh"
+# fi
+# if [[ ! -f "${STEAMAPPDIR}/post.sh" ]] ; then
+#     cp /etc/post.sh "${STEAMAPPDIR}/post.sh"
+# fi
 
 # Download and extract custom config bundle
 # if [[ ! -z $CS2_CFG_URL ]]; then
@@ -75,7 +75,7 @@ fi
 cd "${STEAMAPPDIR}/game/bin/linuxsteamrt64"
 
 # Pre Hook
-bash "${STEAMAPPDIR}/pre.sh"
+# bash "${STEAMAPPDIR}/pre.sh"
 
 # Construct server arguments
 
@@ -120,4 +120,4 @@ eval "./cs2" -dedicated \
         "${CS2_ADDITIONAL_ARGS}"
 
 # Post Hook
-bash "${STEAMAPPDIR}/post.sh"
+# bash "${STEAMAPPDIR}/post.sh"
