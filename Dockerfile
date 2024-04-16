@@ -8,7 +8,7 @@ ENV GAMEMODESURL "https://raw.githubusercontent.com/apefrei/butterlan-gameserver
 ENV CONFIGURL "https://raw.githubusercontent.com/apefrei/butterlan-gameserver-configs/main/cs2/butterlan.cfg"
 
 COPY etc/entry.sh "${HOMEDIR}/entry.sh"
-#COPY etc/server.cfg "/etc/server.cfg"
+COPY etc/server.cfg "/etc/server.cfg"
 #COPY etc/pre.sh "/etc/pre.sh"
 #COPY etc/post.sh "/etc/post.sh"
 
