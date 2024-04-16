@@ -38,7 +38,7 @@ cp /etc/server.cfg "${STEAMAPPDIR}"/game/csgo/cfg/server.cfg
 #fi
 
 # Download and use custom configs
-curl ${GAMEMODESURL} --output ${CSTEAMAPPDIR}/game/csgo/gamemodes_server.txt
+curl ${GAMEMODESURL} --output ${STEAMAPPDIR}/game/csgo/gamemodes_server.txt
 curl ${CONFIGURL} --output ${STEAMAPPDIR}/game/csgo/cfg/butterlan.cfg
 
 # Rewrite Config Files
