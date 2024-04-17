@@ -49,13 +49,13 @@ ENV CS2_SERVERNAME="Butterlan CS2 Server" \
     CS2_GAMETYPE=0 \
     CS2_GAMEMODE=1 \
     CS2_LAN=0 \
-    TV_AUTORECORD=0 \
-    TV_ENABLE=0 \
-    TV_PORT=27020 \
-    TV_PW="changeme" \
-    TV_RELAY_PW="changeme" \
-    TV_MAXRATE=0 \
-    TV_DELAY=0 \
+#    TV_AUTORECORD=0 \
+#    TV_ENABLE=0 \
+#    TV_PORT=27020 \
+#    TV_PW="changeme" \
+#    TV_RELAY_PW="changeme" \
+#    TV_MAXRATE=0 \
+#    TV_DELAY=0 \
     SRCDS_TOKEN="" \
     CS2_CFG_URL="" \
     CS2_LOG="on" \
@@ -79,5 +79,4 @@ CMD ["bash", "entry.sh"]
 
 # Expose ports
 EXPOSE 27015/tcp \
-	27015/udp \
-	27020/udp
+	27015/udp
